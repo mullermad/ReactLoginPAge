@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Input from './compnents/Input';
+import { useState } from 'react';
+import Button from './compnents/Button';
+import './app.css';
 
 function App() {
+  const [email,setEmail]=useState('');
+   const [password, setPassword] = useState("");
+
+   const HandlePasswordChange = (event) => {
+    setPassword(event.target.value);
+   
+   
+   };
+   const HandleEmailChange = (event) => {
+    setEmail(event.target.value);
+   
+     
+   };
+const HandleClick = (event) => {
+  event.preventDefault();
+  console.log(`The email is ${email}`);
+console.log(`The password is ${password}` );
+setEmail('');
+setPassword('');
+
+};
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form className="App">
+      <h1 className="header">Login_Page</h1>
+      <Input
+        onChangeEmail={HandleEmailChange}
+        onChangePassword={HandlePasswordChange}
+      />
+      <Button onClickButton={HandleClick} />
+    </form>
   );
 }
 

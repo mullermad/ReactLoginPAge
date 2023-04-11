@@ -1,0 +1,25 @@
+.App{
+    margin: 2rem;
+    background-color: rgb(208, 43, 226);
+    height:500px;
+    width: 90%;
+    padding-left: 40%;
+    color: rgb(27, 32, 189);
+    padding-top: 23px;
+}
+.emailfeild{
+    display: flex;
+    margin: 2rem;
+    color: white;
+}
+.passwordfeild{
+    display: flex;
+    color: white;
+    
+}
+label{
+    margin-right: 1rem;
+}
+.header{
+     padding-left: 10%;
+}

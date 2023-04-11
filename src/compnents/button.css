@@ -1,0 +1,8 @@
+.mybutton{
+    height: 33px;
+    width: 120px;
+    margin: 2rem;
+    margin-left: 7rem;
+   color: white;
+    background-color: rgb(47, 0, 255);
+}

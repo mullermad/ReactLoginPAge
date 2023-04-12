@@ -4,6 +4,7 @@ import Button from './compnents/Button';
 import './app.css';
 
 function App() {
+  
   const [email,setEmail]=useState('');
    const [password, setPassword] = useState("");
 
@@ -14,7 +15,7 @@ function App() {
    };
    const HandleEmailChange = (event) => {
     setEmail(event.target.value);
-   
+ 
  
     
    };
@@ -36,6 +37,7 @@ setPassword('');
         passwordValue={password}
       />
       <Button />
+   
     </form>
   );
 }

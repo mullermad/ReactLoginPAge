@@ -8,13 +8,20 @@ const Input = (props) => {
     <div className="inputs">
       <div className="emailfeild">
         <label>Email</label>
-        <input type="email" onChange={props.onChangeEmail} />
+        <input
+          type="email"
+          onChange={props.onChangeEmail}
+          value={props.emailValue}
+        />
       </div>
       <div className="passwordfeild">
         <label>Password</label>
-        <input type="password" onChange={props.onChangePassword} />
+        <input
+          type="password"
+          onChange={props.onChangePassword}
+          value={props.passwordValue}
+        />
       </div>
-      
     </div>
   );
 }
